@@ -1,4 +1,4 @@
-navbar{
+nav{
   color: #fff;
   background: #101010;
 
@@ -7,7 +7,7 @@ navbar{
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
 
@@ -23,6 +23,8 @@ navbar{
         margin-left: 20px;
         i{
           color: #009CFF;
+          font-size: 15px;
+          margin-right: 5px;
         }
         span{
           opacity: 0.5;
@@ -32,6 +34,9 @@ navbar{
     &.menu{
       font-size: 13px;
       align-self: flex-start;
+      img{
+        height: 25px;
+      }
       li{
         margin-right: 50px;
         i{
@@ -42,4 +47,10 @@ navbar{
     }
   }
 
+}
+
+.jumbo{
+  .logo{
+    height: 50px;
+  }
 }

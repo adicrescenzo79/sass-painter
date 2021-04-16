@@ -19,41 +19,54 @@ select.no-outline {
   padding-bottom: 1em;
 }
 
-navbar {
+.txt-pink {
+  color: #CE38B1;
+}
+
+nav {
   color: #fff;
   background: #101010;
 }
-navbar .container {
+nav .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-navbar ul {
+nav ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-navbar ul.icons {
+nav ul.icons {
   font-size: 11px;
   align-self: flex-end;
 }
-navbar ul.icons li {
+nav ul.icons li {
   margin-left: 20px;
 }
-navbar ul.icons li i {
+nav ul.icons li i {
   color: #009CFF;
+  font-size: 15px;
+  margin-right: 5px;
 }
-navbar ul.icons li span {
+nav ul.icons li span {
   opacity: 0.5;
 }
-navbar ul.menu {
+nav ul.menu {
   font-size: 13px;
   align-self: flex-start;
 }
-navbar ul.menu li {
+nav ul.menu img {
+  height: 25px;
+}
+nav ul.menu li {
   margin-right: 50px;
 }
-navbar ul.menu li i {
+nav ul.menu li i {
   opacity: 0.5;
   font-size: 11px;
+}
+
+.jumbo .logo {
+  height: 50px;
 }
