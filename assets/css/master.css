@@ -1,1 +1,59 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
 
+ul.no-style {
+  list-style: none;
+}
+
+select.no-outline {
+  outline: none;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.py-1 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+navbar {
+  color: #fff;
+  background: #101010;
+}
+navbar .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+navbar ul.icons {
+  font-size: 11px;
+  align-self: flex-end;
+}
+navbar ul.icons li {
+  margin-left: 20px;
+}
+navbar ul.icons li i {
+  color: #009CFF;
+}
+navbar ul.icons li span {
+  opacity: 0.5;
+}
+navbar ul.menu {
+  font-size: 13px;
+  align-self: flex-start;
+}
+navbar ul.menu li {
+  margin-right: 50px;
+}
+navbar ul.menu li i {
+  opacity: 0.5;
+  font-size: 11px;
+}

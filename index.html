@@ -3,14 +3,63 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/12bool.css">
     <link rel="stylesheet" href="./assets/css/master.css">
-    <title></title>
+    <title>Painter</title>
   </head>
   <body>
     <div id="root">
-      <p>{{message}}</p>
 
+      <header>
+        <navbar class="capitalize py-1">
+          <div class="container ">
+            <ul class="icons no-style">
+              <li>
+                <i class="fas fa-phone-alt"></i>
+                <span>1-877-582-6735</span>
+              </li>
+              <li>
+                <i class="fas fa-comment-alt"></i>
+                <span>chat</span>
+              </li>
+              <li>
+                <i class="fas fa-user"></i>
+                <span>sign in</span>
+              </li>
+              <li>
+                <i class="fas fa-shopping-cart"></i>
+                <span>cart</span>
+              </li>
+              <li>
+                <select class="no-outline" name="">
+                  <option>English</option>
+                </select>
+              </li>
+            </ul>
+
+            <ul class="menu no-style">
+              <li><img src="./assets/img/logo_painter.png" alt=""></li>
+              <li>products <i class="fas fa-chevron-down"></i></li>
+              <li>brushes <i class="fas fa-chevron-down"></i></li>
+              <li>wacom tablets </li>
+              <li>special offers</li>
+              <li>free trials</li>
+              <li>business</li>
+              <li>support <i class="fas fa-chevron-down"></i></li>
+              <li>learning <i class="fas fa-chevron-down"></i></li>
+            </ul>
+          </div>
+        </navbar>
+
+        <div class="jumbo">
+
+        </div>
+      </header>
 
 
 
@@ -47,10 +96,6 @@
 
 
     </div>
-    <!-- SCOMMENTARE SE SI USA JQUERY -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script> -->
-
-    <!-- SCOMMENTARE SE SI USA VUE -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="./assets/js/main.js" charset="utf-8"></script>

@@ -1,0 +1,45 @@
+navbar{
+  color: #fff;
+  background: #101010;
+
+
+  .container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+
+  ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &.icons{
+      font-size: 11px;
+      align-self: flex-end;
+      li{
+        margin-left: 20px;
+        i{
+          color: #009CFF;
+        }
+        span{
+          opacity: 0.5;
+        }
+      }
+    }
+    &.menu{
+      font-size: 13px;
+      align-self: flex-start;
+      li{
+        margin-right: 50px;
+        i{
+          opacity: 0.5;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
+}
