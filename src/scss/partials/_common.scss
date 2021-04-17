@@ -80,6 +80,15 @@ button{
   &.button-trans{
     background-color:  hsla(0, 0%, 0%, 0);
   }
+  &.button-white{
+    font-size: 17px;
+    border: 0;
+    background-color: #fff;
+    color: rgba(0,0,0,0.9);
+    &:hover{
+      opacity: 0.8;
+    }
+  }
 }
 
 .mt-05{

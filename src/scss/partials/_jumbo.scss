@@ -1,6 +1,5 @@
 .jumbo{
-  background-size: cover;
-  background-position: center;
+  @include bg-img;
   .logo{
     height: 50px;
   }

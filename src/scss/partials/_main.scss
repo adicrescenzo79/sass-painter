@@ -1,3 +1,14 @@
+.debug{
+  main{
+    .pictures{
+      .info{
+        background-color: red;
+        height: 300px;
+      }
+    }
+  }
+}
+
 main{
   text-align: center;
   background-color: #E8E8E8;
@@ -29,6 +40,51 @@ main{
       }
       &:hover .link{
         text-decoration: underline;
+      }
+    }
+  }
+  .pictures{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    .wacom{
+      background-color: #3C1567;
+    }
+    .masters{
+      background-color: #3C3C3C;
+    }
+    .business{
+      background-color: #0072BC;
+    }
+    .riga{
+      width: 100%;
+
+      display: flex;
+      .info{
+        text-align: left;
+        color: #fff;
+        font-size: 18px;
+        width: 50%;
+        padding-top: 3em;
+        padding-bottom: 4em;
+        padding-left: 2em;
+        padding-right: 3em;
+        p{
+          padding-top: 2em;
+          padding-bottom: 2em;
+        }
+      }
+      .immagine{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 50%;
+        @include bg-img;
+        img{
+
+          width: 70%;
+        }
       }
     }
   }

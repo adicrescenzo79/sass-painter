@@ -76,6 +76,15 @@ button.button-black:hover {
 button.button-trans {
   background-color: rgba(0, 0, 0, 0);
 }
+button.button-white {
+  font-size: 17px;
+  border: 0;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.9);
+}
+button.button-white:hover {
+  opacity: 0.8;
+}
 
 .mt-05 {
   margin-top: 0.5em;
@@ -154,6 +163,11 @@ nav ul.menu li i {
   height: 50px;
 }
 
+.debug main .pictures .info {
+  background-color: red;
+  height: 300px;
+}
+
 main {
   text-align: center;
   background-color: #E8E8E8;
@@ -186,4 +200,47 @@ main .possibilities .content .info .link {
 }
 main .possibilities .content:hover .link {
   text-decoration: underline;
+}
+main .pictures {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+main .pictures .wacom {
+  background-color: #3C1567;
+}
+main .pictures .masters {
+  background-color: #3C3C3C;
+}
+main .pictures .business {
+  background-color: #0072BC;
+}
+main .pictures .riga {
+  width: 100%;
+  display: flex;
+}
+main .pictures .riga .info {
+  text-align: left;
+  color: #fff;
+  font-size: 18px;
+  width: 50%;
+  padding-top: 3em;
+  padding-bottom: 4em;
+  padding-left: 2em;
+  padding-right: 3em;
+}
+main .pictures .riga .info p {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+main .pictures .riga .immagine {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+}
+main .pictures .riga .immagine img {
+  width: 70%;
 }
