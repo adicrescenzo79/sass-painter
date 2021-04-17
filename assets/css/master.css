@@ -163,6 +163,12 @@ nav ul.menu li i {
   font-size: 11px;
 }
 
+@media all and (max-width: 991px) {
+  nav ul {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
 .jumbo {
   background-size: cover;
   background-position: center;
@@ -171,6 +177,11 @@ nav ul.menu li i {
   height: 50px;
 }
 
+@media all and (max-width: 991px) {
+  jumbo {
+    font-size: 13px;
+  }
+}
 .debug main .pictures .info {
   background-color: red;
   height: 300px;

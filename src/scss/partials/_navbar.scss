@@ -57,3 +57,12 @@ nav{
   }
 
 }
+
+@media all and (max-width: 991px){
+  nav{
+    ul{
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+  }
+}
