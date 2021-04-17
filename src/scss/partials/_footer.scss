@@ -1,0 +1,72 @@
+footer{
+  .links{
+    background-color: #ECECEC;
+    font-size: 13px;
+    li{
+      @include py-05;
+      &.icons{
+        display: flex;
+        .icon{
+          width: 35px;
+          height: 35px;
+          margin-right: 5px;
+          background-color: #000;
+          color: #fff;
+          font-size: 20px;
+          @include flex-center;
+          &.ig{
+            background-color: #E4405F;
+          }
+          &.fb{
+            background-color: #3B5998;
+          }
+          &.tw{
+            background-color: #1DA1F2;
+          }
+          &.yt{
+            background-color: #CD201F;
+          }
+          &.pint{
+            background-color: #BD081C;
+          }
+          &.rss{
+            background-color: #FF8D00;
+          }
+
+        }
+      }
+    }
+    .title{
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .link{
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  .ref{
+    background-color: #1E1E1E;
+    font-size: 10px;
+    color: #fff;
+    .container{
+
+      display: flex;
+      justify-content: space-between;
+    }
+    ul{
+      @include flex-center;
+      li{
+        margin: 1em;
+        &.link{
+          opacity: 0.5;
+          &:hover{
+            opacity: 1;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

@@ -21,6 +21,10 @@ select.no-outline {
   text-transform: uppercase;
 }
 
+.txt-10 {
+  font-size: 10px;
+}
+
 .pall-1 {
   padding-top: 1em;
   padding-left: 1em;
@@ -34,6 +38,10 @@ select.no-outline {
 
 .pt-2 {
   padding-top: 2em;
+}
+
+.pt-3 {
+  padding-top: 3em;
 }
 
 .py-1 {
@@ -187,7 +195,10 @@ main .possibilities .content img {
   height: 195px;
   width: 100%;
 }
-main .possibilities .content .info span:first-of-type {
+main .possibilities .content .info .reg {
+  font-size: 10px;
+}
+main .possibilities .content .info span.title {
   font-size: 19px;
   font-weight: bold;
 }
@@ -243,4 +254,76 @@ main .pictures .riga .immagine {
 }
 main .pictures .riga .immagine img {
   width: 70%;
+}
+
+footer .links {
+  background-color: #ECECEC;
+  font-size: 13px;
+}
+footer .links li {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+footer .links li.icons {
+  display: flex;
+}
+footer .links li.icons .icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .links li.icons .icon.ig {
+  background-color: #E4405F;
+}
+footer .links li.icons .icon.fb {
+  background-color: #3B5998;
+}
+footer .links li.icons .icon.tw {
+  background-color: #1DA1F2;
+}
+footer .links li.icons .icon.yt {
+  background-color: #CD201F;
+}
+footer .links li.icons .icon.pint {
+  background-color: #BD081C;
+}
+footer .links li.icons .icon.rss {
+  background-color: #FF8D00;
+}
+footer .links .title {
+  font-size: 16px;
+  font-weight: bold;
+}
+footer .links .link:hover {
+  text-decoration: underline;
+}
+footer .ref {
+  background-color: #1E1E1E;
+  font-size: 10px;
+  color: #fff;
+}
+footer .ref .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .ref ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .ref ul li {
+  margin: 1em;
+}
+footer .ref ul li.link {
+  opacity: 0.5;
+}
+footer .ref ul li.link:hover {
+  opacity: 1;
+  text-decoration: underline;
 }

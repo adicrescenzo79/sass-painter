@@ -26,9 +26,14 @@ main{
         width: 100%;
       }
       .info{
-        span:first-of-type{
-          font-size: 19px;
-          font-weight: bold;
+        .reg{
+          font-size: 10px;
+        }
+        span{
+          &.title{
+            font-size: 19px;
+            font-weight: bold;
+          }
         }
         .new{
           color: $link-color;
