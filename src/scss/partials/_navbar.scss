@@ -22,7 +22,7 @@ nav{
       li{
         margin-left: 20px;
         i{
-          color: #009CFF;
+          color: $link-color;
           font-size: 15px;
           margin-right: 5px;
         }
@@ -56,12 +56,4 @@ nav{
     }
   }
 
-}
-
-.jumbo{
-  background-size: cover;
-  background-position: center;
-  .logo{
-    height: 50px;
-  }
 }

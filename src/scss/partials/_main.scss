@@ -1,0 +1,35 @@
+main{
+  text-align: center;
+  background-color: #E8E8E8;
+  .possibilities{
+    h1{
+      font-size: 2em;
+      font-weight: normal;
+    }
+    font-size: 16px;
+    .content{
+      background-color: #fff;
+      text-align: left;
+      img{
+        height: 195px;
+        width: 100%;
+      }
+      .info{
+        span:first-of-type{
+          font-size: 19px;
+          font-weight: bold;
+        }
+        .new{
+          color: $link-color;
+          margin-right: 5px;
+        }
+        .link{
+          color: $link-color;
+        }
+      }
+      &:hover .link{
+        text-decoration: underline;
+      }
+    }
+  }
+}
