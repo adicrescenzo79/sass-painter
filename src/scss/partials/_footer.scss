@@ -1,7 +1,7 @@
 footer{
   .links{
     background-color: #ECECEC;
-    font-size: 13px;
+    font-size: 0.8em;
     li{
       @include py-05;
       &.icons{
@@ -37,7 +37,7 @@ footer{
       }
     }
     .title{
-      font-size: 16px;
+      font-size: 1em;
       font-weight: bold;
     }
     .link{
@@ -46,6 +46,7 @@ footer{
       }
     }
   }
+
   .ref{
     background-color: #1E1E1E;
     font-size: 10px;
@@ -64,6 +65,44 @@ footer{
           &:hover{
             opacity: 1;
             text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 991px){
+  footer{
+    .links{
+      li{
+        &.icons{
+          flex-wrap: wrap;
+          .icon{
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+    .ref{
+      ul{
+        &.copyright{
+          justify-content: flex-end;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 767px){
+  footer{
+    .ref{
+      .container{
+        flex-direction: column;
+        ul{
+          &.partners{
+            flex-wrap: wrap;
           }
         }
       }

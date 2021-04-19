@@ -13,3 +13,13 @@
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
+
+@mixin py($em){
+  padding-top: #{$em}em;
+  padding-bottom: #{$em}em;
+}
+
+@mixin px($em){
+  padding-right: #{$em}em;
+  padding-left: #{$em}em;
+}

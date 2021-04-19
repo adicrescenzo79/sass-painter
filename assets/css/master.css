@@ -1,5 +1,6 @@
 body {
   font-family: "Raleway", sans-serif;
+  font-size: 16px;
 }
 
 ul li:hover {
@@ -60,16 +61,18 @@ select.no-outline {
 }
 
 .txt-pink {
+  font-style: italic;
   color: #CE38B1;
 }
 
 button {
-  font-size: 21px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 25px;
-  padding-left: 25px;
+  font-size: 1.2em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  padding-right: 1.6em;
+  padding-left: 1.6em;
   border: 2px solid #000;
+  margin-top: 5px;
 }
 button:hover {
   cursor: pointer;
@@ -110,6 +113,16 @@ button.button-white:hover {
   margin-right: 1em;
 }
 
+@media all and (max-width: 991px) {
+  body {
+    font-size: 13px;
+  }
+}
+@media all and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+}
 nav {
   color: #fff;
   background: #101010;
@@ -119,13 +132,20 @@ nav .container {
   flex-direction: column;
   justify-content: space-between;
 }
+nav .hamburger {
+  display: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+nav .hamburger img {
+  height: 25px;
+}
 nav ul {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
 }
 nav ul.icons {
-  font-size: 11px;
+  font-size: 0.7em;
   align-self: flex-end;
 }
 nav ul.icons li {
@@ -144,7 +164,7 @@ nav ul.icons li span {
   opacity: 0.5;
 }
 nav ul.menu {
-  font-size: 13px;
+  font-size: 0.8em;
   align-self: flex-start;
 }
 nav ul.menu img {
@@ -169,6 +189,51 @@ nav ul.menu li i {
     flex-wrap: wrap;
   }
 }
+@media all and (max-width: 767px) {
+  nav .hamburger {
+    width: 100%;
+    padding-bottom: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  nav .hamburger i {
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+    font-size: 1.5em;
+  }
+  nav .container {
+    max-width: 100%;
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+  nav .container ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav .container ul.icons {
+    align-self: flex-start;
+    font-size: 1em;
+  }
+  nav .container ul.icons li {
+    margin: 15px 20px;
+  }
+  nav .container ul.menu {
+    width: 100%;
+    font-size: 1em;
+  }
+  nav .container ul.menu li {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  nav .container ul.menu li.logo {
+    display: none;
+  }
+}
 .jumbo {
   background-size: cover;
   background-position: center;
@@ -177,11 +242,6 @@ nav ul.menu li i {
   height: 50px;
 }
 
-@media all and (max-width: 991px) {
-  jumbo {
-    font-size: 13px;
-  }
-}
 .debug main .pictures .info {
   background-color: red;
   height: 300px;
@@ -201,9 +261,9 @@ main .possibilities h1 {
 main .possibilities .content {
   background-color: #fff;
   text-align: left;
+  line-height: 1.4;
 }
 main .possibilities .content img {
-  height: 195px;
   width: 100%;
 }
 main .possibilities .content .info .reg {
@@ -244,7 +304,7 @@ main .pictures .riga {
 main .pictures .riga .info {
   text-align: left;
   color: #fff;
-  font-size: 18px;
+  font-size: 1.1em;
   width: 50%;
   padding-top: 3em;
   padding-bottom: 4em;
@@ -269,7 +329,7 @@ main .pictures .riga .immagine img {
 
 footer .links {
   background-color: #ECECEC;
-  font-size: 13px;
+  font-size: 0.8em;
 }
 footer .links li {
   padding-top: 0.5em;
@@ -308,7 +368,7 @@ footer .links li.icons .icon.rss {
   background-color: #FF8D00;
 }
 footer .links .title {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: bold;
 }
 footer .links .link:hover {
@@ -337,4 +397,25 @@ footer .ref ul li.link {
 footer .ref ul li.link:hover {
   opacity: 1;
   text-decoration: underline;
+}
+
+@media all and (max-width: 991px) {
+  footer .links li.icons {
+    flex-wrap: wrap;
+  }
+  footer .links li.icons .icon {
+    margin-top: 5px;
+  }
+  footer .ref ul.copyright {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+}
+@media all and (max-width: 767px) {
+  footer .ref .container {
+    flex-direction: column;
+  }
+  footer .ref .container ul.partners {
+    flex-wrap: wrap;
+  }
 }

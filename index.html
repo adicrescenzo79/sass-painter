@@ -17,7 +17,11 @@
 
       <header>
         <nav class="capitalize pt-1">
-          <div class="container ">
+          <div class="hamburger">
+            <i @click="navbarOn=!navbarOn" class="fas fa-bars"></i>
+            <img src="./assets/img/logo_painter.png" alt="">
+          </div>
+          <div v-if="navbarOn" class="container">
             <ul class="icons no-style">
               <li>
                 <i class="fas fa-phone-alt"></i>
@@ -42,8 +46,8 @@
               </li>
             </ul>
 
-            <ul class="menu no-style">
-              <li><img src="./assets/img/logo_painter.png" alt=""></li>
+            <ul class="menu no-style" >
+              <li class="logo"><img src="./assets/img/logo_painter.png" alt=""></li>
               <li>products <i class="fas fa-chevron-down"></i></li>
               <li>brushes <i class="fas fa-chevron-down"></i></li>
               <li>wacom tablets </li>
@@ -63,7 +67,7 @@
                 <div class="content">
                   <img class="logo" src="./assets/img/painter-2021-wm-black.png" alt="">
                   <p class="mt-1">The most realistic painting experience you'll find hard to resist</p>
-                  <p class="txt-pink mt-2"><em><span class="capitalize"><b>flash sale</b></span><br>Save up to $130 + Get Signature Style Brush Pack Bundle FREE (worth $179.99)</em></p>
+                  <p class="txt-pink mt-2"><span class="capitalize"><b>flash sale</b></span><br>Save up to $130 + Get Signature Style Brush Pack Bundle FREE (worth $179.99)</p>
                   <button class="uppercase button-black  mt-2 mr-1">learn more</button>
                   <button class="uppercase button-trans">download trial</button>
                 </div>
@@ -113,7 +117,9 @@
               </div>
             </div>
           </section>
+        </div>
 
+        <div class="container-fluid">
           <section class="pictures pt-3">
             <div class="wacom riga">
               <div class="info">
@@ -142,8 +148,8 @@
               <div class="immagine" style="background-image: url('./assets/img/business-education.jpg')"></div>
             </div>
           </section>
-
         </div>
+
       </main>
 
       <footer>
@@ -215,7 +221,6 @@
 
         <div class="ref">
           <div class="container">
-
             <ul class="partners no-style">
               <li><img src="./assets/img/corelAdvantage.png" alt=""></li>
               <li><img src="./assets/img/logo-bbb.png" alt=""></li>
