@@ -37,7 +37,7 @@ footer{
       }
     }
     .title{
-      font-size: 1em;
+      font-size: 1rem;
       font-weight: bold;
     }
     .link{
@@ -97,6 +97,17 @@ footer{
 
 @media all and (max-width: 767px){
   footer{
+    .links{
+      ul{
+        margin-bottom: 2em;
+        li{
+          line-height: 1.5;
+          &.link{
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
     .ref{
       .container{
         flex-direction: column;

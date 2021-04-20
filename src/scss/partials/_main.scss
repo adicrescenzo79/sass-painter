@@ -55,12 +55,21 @@ main{
     width: 100%;
     .wacom{
       background-color: #3C1567;
+      .immagine{
+        background-image: url('../img/wacom-painter.jpg')
+      }
     }
     .masters{
       background-color: #3C3C3C;
+      .immagine{
+        background-image: url('../img/painter-master.jpg')
+      }
     }
     .business{
       background-color: #0072BC;
+      .immagine{
+        background-image: url('../img/business-education.jpg')
+      }
     }
     .riga{
       width: 100%;

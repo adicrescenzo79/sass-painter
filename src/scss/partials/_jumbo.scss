@@ -1,4 +1,5 @@
 .jumbo{
+  background-image: url('../img/bg-painter-home.jpg');
   @include bg-img;
   @include py(6);
   .logo{

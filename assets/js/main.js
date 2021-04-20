@@ -3,6 +3,13 @@ var app = new Vue({
   el: '#root',
   data: {
     navbarOn: false,
+    width: '',
+  },
+  created: function(){
+    this.width = window.innerWidth;
+    window.addEventListener('resize', () => {
+      this.width = window.innerWidth;
+    });
   }
 })
 

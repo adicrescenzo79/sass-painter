@@ -235,6 +235,7 @@ nav ul.menu li i {
   }
 }
 .jumbo {
+  background-image: url("../img/bg-painter-home.jpg");
   background-size: cover;
   background-position: center;
   padding-top: 6em;
@@ -338,11 +339,20 @@ main .pictures {
 main .pictures .wacom {
   background-color: #3C1567;
 }
+main .pictures .wacom .immagine {
+  background-image: url("../img/wacom-painter.jpg");
+}
 main .pictures .masters {
   background-color: #3C3C3C;
 }
+main .pictures .masters .immagine {
+  background-image: url("../img/painter-master.jpg");
+}
 main .pictures .business {
   background-color: #0072BC;
+}
+main .pictures .business .immagine {
+  background-image: url("../img/business-education.jpg");
 }
 main .pictures .riga {
   width: 100%;
@@ -444,7 +454,7 @@ footer .links li.icons .icon.rss {
   background-color: #FF8D00;
 }
 footer .links .title {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: bold;
 }
 footer .links .link:hover {
@@ -488,6 +498,15 @@ footer .ref ul li.link:hover {
   }
 }
 @media all and (max-width: 767px) {
+  footer .links ul {
+    margin-bottom: 2em;
+  }
+  footer .links ul li {
+    line-height: 1.5;
+  }
+  footer .links ul li.link {
+    font-size: 0.9rem;
+  }
   footer .ref .container {
     flex-direction: column;
   }

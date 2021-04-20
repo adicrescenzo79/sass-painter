@@ -21,7 +21,7 @@
             <i @click="navbarOn=!navbarOn" class="fas fa-bars"></i>
             <img src="./assets/img/logo_painter.png" alt="">
           </div>
-          <div v-if="navbarOn" class="container">
+          <div v-if="navbarOn || (width > 768)" class="container">
             <ul class="icons no-style">
               <li>
                 <i class="fas fa-phone-alt"></i>
@@ -129,12 +129,12 @@
                 <p>Satisfy all your digital painting needs with the power and precision of these award-winning bundles.</p>
                 <button class="button-white button uppercase">learn more</button>
               </div>
-              <div class="immagine" style="background-image: url('./assets/img/wacom-painter.jpg')">
+              <div class="immagine">
                 <img src="./assets/img/wacom.png" alt="">
               </div>
             </div>
             <div class="masters riga">
-              <div class="immagine" style="background-image: url('./assets/img/painter-master.jpg')"></div>
+              <div class="immagine"></div>
               <div class="info">
                 <h1 class="capitalize">Painter Masters</h1>
                 <p>Gain inspiration and knowledge from professional artists who have mastered Painter, and excel in their craft.</p>
@@ -147,7 +147,7 @@
                 <p>Save money on our award-winning painting software thanks to affordable and flexible licensing options.</p>
                 <button class="button-white button uppercase">learn more</button>
               </div>
-              <div class="immagine" style="background-image: url('./assets/img/business-education.jpg')"></div>
+              <div class="immagine"></div>
             </div>
           </section>
         </div>
@@ -158,7 +158,7 @@
         <div class="links py-3">
           <div class="container">
             <div class="row">
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-xs-12">
                 <div class="content products">
                   <ul class="capitalize no-style">
                     <li class="title">products</li>
@@ -171,7 +171,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-xs-12">
                 <div class="content quick">
                   <ul class="capitalize no-style">
                     <li class="title">quick links</li>
@@ -184,7 +184,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-xs-12">
                 <div class="content support">
                   <ul class="capitalize no-style">
                     <li class="title">support</li>
@@ -196,7 +196,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-xs-12">
                 <div class="content about">
                   <ul class="capitalize no-style">
                     <li class="title">about corel</li>
