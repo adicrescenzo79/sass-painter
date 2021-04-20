@@ -1,6 +1,55 @@
 .jumbo{
   @include bg-img;
+  @include py(6);
   .logo{
     height: 50px;
+    &.logo-white{
+      display: none;
+    }
+  }
+  .button-white{
+    display: none;
+  }
+}
+
+@media all and (max-width: 767px){
+  .jumbo{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../img/bg-painter-home.jpg');
+    background-blend-mode: darken;
+    text-align: center;
+    background-position-x: 65%;
+    @include ptb(4, 5);
+    .content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo{
+      &.logo-black{
+        display: none;
+      }
+      &.logo-white{
+        display: block;
+      }
+    }
+    p{
+      color: #fff;
+      line-height: 1.5;
+      width: 85%;
+      &.txt-pink{
+        font-size: 0.8em;
+      }
+    }
+    .button-black{
+      display: none;
+    }
+    .button-trans{
+      display: none;
+    }
+    .button-white{
+      display: block;
+      margin-right: 0;
+    }
+
   }
 }

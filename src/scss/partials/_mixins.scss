@@ -23,3 +23,8 @@
   padding-right: #{$em}em;
   padding-left: #{$em}em;
 }
+
+@mixin ptb($emt, $emb){
+  padding-top: #{$emt}em;
+  padding-bottom: #{$emb}em;
+}
